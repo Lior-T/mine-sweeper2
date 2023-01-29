@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mine Sweeper</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body onload="init()">
+  <button id="restart-btn" onclick="init()">😀</button>
+  
+  <h2>life: <span></span></h2>
+  <div class="levels">
+    <button onclick="initEasy()" class="easy">Level 1</button>
+    <button onclick=initMedium() class="medium">Level 2</button>
+    <button onclick="initHard()" class="hard">Level 3</button>
+  </div>
+    <div class="board">
+    <table class="board-mine">
+      <tbody></tbody>
+    </table>
+  </div>
+  
+  <footer>Trosman Lior</footer>
+  
+  <script src="utils.js"></script>
+  <script src="game.js"></script>
+  <script src="mine.js"></script>
+</body>
+
+</html>
